@@ -28,3 +28,4 @@ EG: fmt.Println // here print ln is an public / exported
 6. No try catch
 7. Best for concurrent jobs
 8. lexer is doing lot of stuff
+9. No while loops in go (while & do while ❌)

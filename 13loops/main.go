@@ -37,6 +37,7 @@ func main(){
 	}
 
 
+	// Block for GOTO statements
 	lco:
 		fmt.Println("Jumping here!")
 }

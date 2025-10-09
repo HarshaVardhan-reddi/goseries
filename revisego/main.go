@@ -2,7 +2,7 @@ package main
 
 import(
 	"fmt"
-	"revise/basicproblems"
+	rb "revise/basicproblems" // alias for an imported package
 )
 
 func main(){
@@ -13,6 +13,6 @@ func main(){
 	var y int  = 10
 	fmt.Printf("printing y %d\n", y)
 
-	result := basicproblems.IsEven(2)
+	result := rb.IsEven(2)
 	fmt.Println("Result is: ", result)
 }

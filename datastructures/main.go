@@ -6,5 +6,5 @@ import(
 
 func main(){
 	fmt.Println("Running main....")
-	slice.CreateAndTraverseSlice()
+	slice.CrudSlice()
 }

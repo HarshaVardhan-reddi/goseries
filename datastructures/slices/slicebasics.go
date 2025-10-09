@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-func CreateAndTraverseSlice(){
+func CrudSlice(){
 	fmt.Println("Initializing a slice in go, under hood an array")
 
 	var frutis = []string{"Apple", "Tomato", "Peach"}

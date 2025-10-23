@@ -7,4 +7,5 @@ import(
 func main(){
 	fmt.Println("Running main....")
 	slice.CrudSlice()
+	slice.Practice()
 }

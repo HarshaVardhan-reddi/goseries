@@ -3,7 +3,14 @@ package main
 import(
 	"fmt"
 	rb "revise/basicproblems" // alias for an imported package
+	maps "revise/mapsrevise"
+	strcuts "revise/structsingo"
 )
+
+type User struct {
+	name string
+	age int
+} // here type creates a new data type kinda
 
 func main(){
 	fmt.Println("Hello world in go")
@@ -15,4 +22,27 @@ func main(){
 
 	result := rb.IsEven(2)
 	fmt.Println("Result is: ", result)
+
+	user := User{"Harsha",27}
+	fmt.Println("user", user)
+	fmt.Printf("type of user %T", user)
+
+	// var arr = [5]int{1,2,3,4,5} Array
+
+	maps.ReviseMaps()
+	strcuts.StructsInGo()
+
+	strcuts.PracticeStruct()
+
+	mapprac := map[string]int{"absb":1}
+	for key,value := range(mapprac) {
+		fmt.Println(key,value)
+	}
+
+	map1 := make(map[string]int, 0)
+	map1["abc"] = 1
+
+	for key,value := range(map1) {
+		fmt.Println(key,value)
+	}
 }

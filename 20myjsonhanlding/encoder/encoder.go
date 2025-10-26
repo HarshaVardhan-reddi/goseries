@@ -1,4 +1,4 @@
-package decoders
+package encoders
 
 import (
 	"encoding/json"

@@ -2,7 +2,7 @@ package main
 
 import(
 	"fmt"
-	encoders "myjsonhanlding/encoder"
+	"myjsonhanlding/encoder"
 )
 
 type course struct{

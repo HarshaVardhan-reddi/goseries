@@ -5,6 +5,7 @@ import(
 	rb "revise/basicproblems" // alias for an imported package
 	maps "revise/mapsrevise"
 	strcuts "revise/structsingo"
+	"revise/pointers"
 )
 
 type User struct {
@@ -45,4 +46,9 @@ func main(){
 	for key,value := range(map1) {
 		fmt.Println(key,value)
 	}
+
+	var intx int = 10
+
+	address, val := pointers.FetchAddressOfInteger(&intx)
+	fmt.Println("Address of the val: ", address, "value in the address: ", val)
 }

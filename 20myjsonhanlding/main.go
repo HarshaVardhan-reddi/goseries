@@ -3,6 +3,7 @@ package main
 import(
 	"fmt"
 	"myjsonhanlding/encoder"
+	"myjsonhanlding/decoders"
 )
 
 type course struct{
@@ -23,7 +24,9 @@ func main(){
 	}
 
 	fmt.Println(crx)
-	encoders.EncodeCourses(data)
+	result := encoders.EncodeCourses(data)
+	parsedJSON := decoders.ParseInputStringifiedJson(result)
+	fmt.Println("Parsed json: ",parsedJSON)
 }
 
 func constructData() course {

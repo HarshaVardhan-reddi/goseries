@@ -12,11 +12,12 @@ type DataForEncode struct{
 	Tags []string
 }
 
-func EncodeCourses(data DataForEncode){
+func EncodeCourses(data DataForEncode)string {
 	fmt.Println("Encoding the data")
 	result, err := json.MarshalIndent(data,"","\t")
 	if err != nil {
 		panic(err)
 	}
 	fmt.Println("Result",string(result))
+	return string(result)
 }

@@ -14,5 +14,5 @@ func main(){
 		}
 	}()
 
-	panic("Raising panic here!!!")
+	panic("Raising panic here!!!") // user only for unrecoverable errors
 }

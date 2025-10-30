@@ -7,5 +7,5 @@ FOLDER="${VERSION}my${NAME}"
 echo "creating ${FOLDER}"
 mkdir $FOLDER
 cd $FOLDER
-go mod init "my${NAME}"
+go mod init "${NAME}"
 touch main.go

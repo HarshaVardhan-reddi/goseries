@@ -2,7 +2,7 @@
 VERSION=$1
 NAME=$2
 
-FOLDER="${VERSION}my${NAME}"
+FOLDER="${VERSION}${NAME}"
 
 echo "creating ${FOLDER}"
 mkdir $FOLDER

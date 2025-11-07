@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+// https://youtu.be/jHd0FczIjAE?si=2CktOaxDivuj7Xvl - closure
 
 func doubleElementsInSlices(slc []int, doubler func(int) int) []int { // callback function
 	var tempslc []int

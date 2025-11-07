@@ -55,4 +55,8 @@ go mod edit -module -> if changes required to the module name
 
 ## go mod vendor
 
-fetches the modules code and places in the project directoray under a folder called vendor. more of like a node_modules in js instead of default difrectory
+fetches the modules code and places in the project directoray under a folder called vendor. more of like a node_modules in js instead of default 
+
+## go run . --race
+
+Finds out if the written go file has reace condition in it

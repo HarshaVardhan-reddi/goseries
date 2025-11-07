@@ -1,5 +1,7 @@
 package main
 
+// https://www.youtube.com/watch?v=4TCNUa-5wmI&list=PLRAV69dS1uWQGDQoBYMZWKjzuhCaOnBpa&index=55
+
 import (
 	"concurrencyInGo/locksingo"
 	"fmt"

@@ -1,6 +1,7 @@
 package workingwithyaml
 
 import (
+	"encoding/json"
 	"fmt"
 	"io"
 	"os"
@@ -39,6 +40,15 @@ b: 2
 		panic(err)
 	}
 	fmt.Println("Unmarshalled YAML", sample)
+
+	// converting unmarshlled yaml to json
+	fmt.Println("Printing json")
+	writter := os.Stdout
+	err = json.NewEncoder(writter).Encode(sample)
+
+	if err != nil{
+		panic(err)
+	}
 }
 
 

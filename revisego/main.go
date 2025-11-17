@@ -1,11 +1,13 @@
 package main
 
-import(
+import (
 	"fmt"
+	"revise/basicproblems"
 	rb "revise/basicproblems" // alias for an imported package
+	"revise/ctxpackage"
 	maps "revise/mapsrevise"
-	strcuts "revise/structsingo"
 	"revise/pointers"
+	strcuts "revise/structsingo"
 )
 
 type User struct {
@@ -51,4 +53,9 @@ func main(){
 
 	address, val := pointers.FetchAddressOfInteger(&intx)
 	fmt.Println("Address of the val: ", address, "value in the address: ", val)
+
+	ctxpackage.BasicChannel()
+	ctxpackage.TestingGoRoutines()
+
+	basicproblems.RevisionOne()
 }
